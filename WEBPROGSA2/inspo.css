@@ -1,0 +1,302 @@
+@font-face {
+    font-family: title;
+    src: url(planet_kosmos/PLANK___.TTF);
+}
+
+@font-face {
+    font-family: desc;
+    src: url(a_pompadour/02_APompadourTextSample.ttf);
+}
+
+@font-face {
+    font-family: 'nav';
+    src: url(mortend/Mortend\ Bold.ttf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000; 
+  }
+  header {
+    font-family: 'nav';
+    font-weight: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    margin-top: 50px;
+}
+
+header.visible {
+    opacity: 1;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 0px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(145, 80, 151);
+    opacity: 1;
+    margin-right: 200px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    margin-right: 150px;
+    margin-left: 20px;
+    margin-top: 70px;
+}
+
+nav ul li a:hover {
+    color: rgb(201, 201, 201);
+    border-bottom: 2px solid #7b2e7e;
+}
+#pers {
+    margin-left: 160px;
+}
+#logo {
+    margin-top: -30px;
+    margin-right: 200px;
+    width: 40px;
+    margin-left: 50px;
+}
+
+  h1 {
+    color: white;
+    font-family: 'nav';
+    margin-left: 0px;
+    font-size: 80px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-top: 400px;
+    margin-left: 400px;
+  }
+
+
+  .container{
+    position: relative;
+    width: 1500px;
+    padding: 100px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, .7);
+    margin-left: 70px;
+    margin-top: 500px;
+  }
+  p {
+    font-family: 'desc';
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin-left: 400px;
+    margin-right: 750px;
+  }
+
+  .vinylrec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    width: 300px; 
+    height: 300px; 
+  }
+  
+  .cover {
+    width: 500px;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .vinyl {
+    width: 550px; 
+    height: auto;
+    position: absolute;
+    top: -130px; 
+    left: 20px; 
+    z-index: 0;
+    animation: rotate 5s linear infinite;
+
+  }
+
+  button {
+    border-radius: 5px;
+    font-family: 'desc';
+    font-size: 23px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 0px;
+    background-color: white;
+    box-shadow:0 4px 8px rgba(85, 85, 85, 0.7);
+    border:0;   
+  }
+
+  button:hover{
+    background-color: black;
+    color: white;
+    transition: background-color 0.5s ease;
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  #cap {
+    font-family: 'desc';
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 50px;
+
+  }
+
+
+  #music {
+    color: rgb(63, 63, 63);
+    font-family: 'nav';
+    font-size: 60px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-top: -350px;
+    margin-left: 550px;
+    margin-bottom: 70px;
+
+  }
+#mudesc {
+    font-family: 'desc';
+    font-size: 20px;
+    color: rgb(63,63,63);
+    margin-left: 550px;
+    margin-right: 40px;
+    line-height: 30px;
+    text-align: justify;
+}
+#mgmp {
+    width:400px;
+    margin-left: 1160px;
+    margin-top: 100px;
+    transform: rotate(12deg);
+    box-shadow: 0px 10px 70px rgba(0, 0, 0, 1);
+  
+}
+
+#ppmp {
+    width:350px;
+    margin-left: 1100px;
+    margin-top: -400px;
+    transform: rotate(-5deg);
+    box-shadow: 0px 10px 70px rgba(0, 0, 0, 1);
+}
+
+#movies {
+    color: rgb(63, 63, 63);
+    font-family: 'nav';
+    font-size: 60px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-top: -570px;
+    margin-left: 0px;
+    margin-bottom: 90px;
+
+  }
+  #modesc {
+    font-family: 'desc';
+    font-size: 20px;
+    color: rgb(63,63,63);
+    margin-left: 10px;
+    margin-right: 600px;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 200px;
+}
+
+footer {
+    margin-top: 300px;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer-logo img {
+    max-width: 150px;
+    margin-bottom: 20px;
+  }
+  
+  .footerlinks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .footerlinks a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+  }
+  
+  .footerlinks a:hover {
+    text-decoration: underline;
+  }
+  
+  .footersocialmedia {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .footersocialmedia a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+    border-radius: 10px; 
+    transition: background-color 0.3s ease;
+  }
+  .footersocialmedia a:hover {
+    color: rgb(255, 255, 255);
+    background-color: #000000; 
+  }
+  
+  .footerinfo p {
+    font-size: 12px;
+    color: black;
+    margin-left: 740px;
+  }
